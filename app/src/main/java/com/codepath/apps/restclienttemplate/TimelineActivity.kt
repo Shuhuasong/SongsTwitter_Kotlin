@@ -32,7 +32,7 @@ class TimelineActivity : AppCompatActivity() {
                 response: String?,
                 throwable: Throwable?
             ) {
-                Log.i(TAG, "onFailure $statusCode")
+                Log.i(TAG, "onFailure")
             }
 
         })
