@@ -29,8 +29,7 @@ class TwitterClient(context: Context) : OAuthBaseClient(
         context.packageName,
         FALLBACK_URL
     )
-) {
-
+) {  //Companion Object: https://medium.com/swlh/kotlin-basics-of-companion-objects-a8422c96779b
     companion object {
         val REST_API_INSTANCE = TwitterApi.instance()
 
@@ -55,7 +54,7 @@ class TwitterClient(context: Context) : OAuthBaseClient(
     // DEFINE METHODS for different API endpoints here
     fun getHomeTimeline(handler: JsonHttpResponseHandler) {
         val apiUrl =
-            getApiUrl("statuses/user_timeline.json")
+            getApiUrl("statuses/home_timeline.json")
 
         // Can specify query string params directly or through RequestParams.
         val params = RequestParams()
