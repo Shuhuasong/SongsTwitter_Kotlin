@@ -17,8 +17,8 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] User can view more tweets as they scroll with infinite pagination
-- [ ] Improve the user interface and theme the app to feel "twitter branded"
+- [X] User can view more tweets as they scroll with infinite pagination
+- [X] Improve the user interface and theme the app to feel "twitter branded"
 - [ ] Links in tweets are clickable and will launch the web browser
 - [ ] User can tap a tweet to display a "detailed" view of that tweet
 - [ ] User can see embedded image media within the tweet detail view
@@ -34,7 +34,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src= "https://recordit.co/6jY99TpZK8.gif" title= "Video Walkthrough" alt= "Video Walkthrough" width=250> 
+<img src= "https://recordit.co/6jY99TpZK8.gif" title= "Video Walkthrough" alt= "Video Walkthrough" width=200> 
+<img src= "https://recordit.co/T85deNKJ53.gif" title= "Video Walkthrough" alt= "Video Walkthrough" width=200> 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
