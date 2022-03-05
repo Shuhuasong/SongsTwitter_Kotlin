@@ -1,23 +1,23 @@
 package com.codepath.apps.restclienttemplate.models
 
+import android.os.Parcelable
 import android.util.Log
 import com.codepath.apps.restclienttemplate.TimeFormatter
+import com.codepath.apps.restclienttemplate.TimelineActivity.Companion.TAG
+import kotlinx.android.parcel.Parcelize
 import org.json.JSONArray
 import org.json.JSONObject
 
-
-class Tweet {
+@Parcelize
+class Tweet(var body: String = "", var createAt: String = "", var user: User? = null,  var formattedTime : String = "") :
+    Parcelable{
 
     var TAG : String = "Tweet"
-
-    var body : String = ""
-    var createAt : String = ""
-    var user : User? = null
-    var formattedTime : String = ""
 
     companion object {
        fun fromJson(jsonObject: JSONObject) : Tweet {
            val tweet = Tweet()
+           Log.i(TAG, "${jsonObject.toString()}")
            tweet.body = jsonObject.getString("text")
            tweet.createAt = jsonObject.getString("created_at")
            tweet.user = User.fromJson(jsonObject.getJSONObject("user"))

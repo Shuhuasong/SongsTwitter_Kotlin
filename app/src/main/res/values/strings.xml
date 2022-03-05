@@ -6,4 +6,15 @@
     <string name="intent_scheme">oauth</string>
     <string name="intent_host">cprest</string>
 
+    <string-array name="mood_array">
+        <item>angry</item>
+        <item>anguish</item>
+        <item>agony</item>
+        <item>anxiety</item>
+        <item>afraid</item>
+        <item>admiring</item>
+        <item>amazed</item>
+        <item>ashamed</item>
+    </string-array>
+
 </resources>
